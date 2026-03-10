@@ -1,0 +1,3 @@
+update,特にfixedUpdateは同じフレームで何度もやる可能性があるので、
+その中で不用意にgame.popState()をするのは危険、
+やたらStateが消えてしまう。

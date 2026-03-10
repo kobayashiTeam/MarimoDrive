@@ -1,0 +1,15 @@
+①playerの縮尺はsScaleの設定に従っている
+raceStartではanimatorの処理がないので、最初のupdateがないとsScaleの反映がなかった
+コンストラクタの時点でspriteをsetScaleしたのでもう問題ない
+
+
+racestartの時点ではraceでの縮尺と違い、小さくなってしまうバグがあった。
+これは、raceのdriver->update中でanimator.updateがあることによって
+spriteのsetScaleが行われていることと、racestartではこれが呼び出されていないことによる
+差が原因だった。なのでanimatorのコンストラクタの時点でsetScaleしておく
+これで解決
+
+②その場合カメラに映る別dirverが小さく映ってしまった。
+勘違いしやすいが、他のdirver達はplayerとは異なる処理で描画される
+そっちを調節したらそっちも違和感のないサイズ感で見えると思う
+こっちもgetDriverDrawablesの数値変更で何とかできた

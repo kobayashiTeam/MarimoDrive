@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\game">
+      <UniqueIdentifier>{fba6213d-c385-4e46-948a-af1bf860b037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\states">
+      <UniqueIdentifier>{7737a170-66b8-40f7-a545-1293054877a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\map">
+      <UniqueIdentifier>{9572bae5-b789-4c00-b340-bd8fbad65ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\entities">
+      <UniqueIdentifier>{73b2a7d8-af47-4c6a-9fb6-719ed8b28156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\input">
+      <UniqueIdentifier>{1868ecd6-9dea-49b4-8966-be405ef7109b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ai">
+      <UniqueIdentifier>{b6e23d49-4507-445a-b91b-2a6d9c679e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gui">
+      <UniqueIdentifier>{db8af8a3-75de-4464-a73e-de5977afd7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\audio">
+      <UniqueIdentifier>{02194a1f-5406-4d6e-aa2d-671d0ea63ed6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\game.cpp">
+      <Filter>ソース ファイル\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\initload.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\map.cpp">
+      <Filter>ソース ファイル\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\racemanager.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\race.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\wallobject.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\driver.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\input.cpp">
+      <Filter>ソース ファイル\input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\racestart.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ai\gradientdescent.cpp">
+      <Filter>ソース ファイル\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\driveranimator.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\wakame.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\collisionhashmap.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\gui.cpp">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\rank.cpp">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\timer.cpp">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\raceend.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\result.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\states\courseselect.cpp">
+      <Filter>ソース ファイル\states</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\textutils.cpp">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio\audio.cpp">
+      <Filter>ソース ファイル\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\sango.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\hitode.cpp">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\enums.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\game.h">
+      <Filter>ソース ファイル\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\initload.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\map.h">
+      <Filter>ソース ファイル\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\racemanager.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\statebase.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\race.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\wallobject.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\driver.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\input.h">
+      <Filter>ソース ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\racestart.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ai\gradientdescent.h">
+      <Filter>ソース ファイル\ai</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\driveranimator.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\wakame.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\collisionhashmap.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\collisiondata.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\gui.h">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\rank.h">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\timer.h">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\raceend.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\result.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\courseselect.h">
+      <Filter>ソース ファイル\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\textutils.h">
+      <Filter>ソース ファイル\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio\audio.h">
+      <Filter>ソース ファイル\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\sango.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\hitode.h">
+      <Filter>ソース ファイル\entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

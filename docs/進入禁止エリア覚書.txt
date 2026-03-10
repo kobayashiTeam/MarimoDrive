@@ -1,0 +1,7 @@
+wallObject（土管、わかめ）に当たった時の処理と
+タイル（進入禁止、黒）に当たった時の処理は別物。
+driverはcollisionMomentum,vectorialという２つのvector2メンバを持っていて、
+衝突処理時に反射方向をこの2つの変数にそれぞれ分けて入れる。
+片方が動くときは片方が停止（＝０）になるようにしている。
+
+名前がわかり辛かったので、wallBounceVector,floorBoounceVectorに変えた。

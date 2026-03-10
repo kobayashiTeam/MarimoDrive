@@ -1,0 +1,31 @@
+//update rankOrder
+auto StillRacingBegin = rankOrder.begin();
+// don't sort drivers that have already finished the circuit
+while (StillRacingBegin != rankOrder.end() &&
+	(*StillRacingBegin)->getLaps() > NUM_LAPS_IN_CIRCUIT){
+	++StillRacingBegin;
+}
+std::sort(StillRacingBegin, rankOrder.end(),
+	[](const Driver* lhs, const Driver* rhs) {
+		// returns true if player A is ahead of B
+		if (lhs->getLaps() == rhs->getLaps()) {
+			return lhs->lastGradient < rhs->lastGradient;
+		}
+		else {
+			return lhs->getLaps() > rhs->getLaps();
+		}
+	});
+
+
+これは正解の処理だけど、とにかく「自分が最下位の状態でゴールしたらここでバグる」現象があった
+①自分が１～３位の状態でクリア：特に問題なし
+ StillRacingBegin < rankOrder.end()) 
+自分がここに引っかかる以前にループを終えるので問題なし
+②自分が最下位の時、
+StillRacingBegin < rankOrder.end()) 
+endは配列の最後ではない、最後のその次の要素なので、実は最下位でも止まってない。
+最下位の週の次のループに入ってしまっていた。そしてendはオブジェクトをさしていないので、
+while ((*StillRacingBegin)->getLaps() > NUM_LAPS_IN_CIRCUIT &&このメソッドを
+呼び出そうとするとgetLapsの未定義処理となる
+
+それだけでした　現状がendだったらループに入らないようにするだけでよろしい

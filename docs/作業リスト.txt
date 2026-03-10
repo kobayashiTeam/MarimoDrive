@@ -1,0 +1,10 @@
+①タイマー処理、表示
+②レースエンドState実装　最初は何もしない
+③gameManagerを進めてresultStateへ
+タイムと順位（これは上位だったら）、thank you for playing
+④スタートの直後にselectCourseStateを生成
+3つのコースから選んだうえでgameManagerへ進む。何を選んだかも伝える
+⑤resultStateが終わったら　最初のステージ選択画面へ　
+
+一連の流れとしてはそれで終わり
+音と画像が大事です　それで終わり
