@@ -11,7 +11,6 @@ struct CollisionData {
     //反発の結果、その時持っていた速度(speedForward)がこの割合だけ減衰する。停止はしないが急減する
     float speedFactor; 
 
-    //衝突タイプは実質１種類だから消してもいいかも
     CollisionData() {}
     CollisionData(const sf::Vector2f&& _momentum, const float _speedFactor)
         : momentum(_momentum), speedFactor(_speedFactor) {

@@ -1,7 +1,6 @@
 #include "gradientdescent.h"
 #include <fstream>
 #include "map/map.h"
-//updateGradientという関数名は適切はじゃないかも。どこで使われているか、１度しか使わないので
 //staticフィールドの宣言と初期化
 AIGradientDescent::IntMapMatrix AIGradientDescent::gradientMatrix,
 AIGradientDescent::positionMatrix;

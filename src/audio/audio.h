@@ -8,7 +8,6 @@
 // 参考:
 // https://www.youtube.com/watch?v=AlAmXXNz5ac
 
-//オリジナル
 #include<SFML/Audio/SoundBuffer.hpp>
 
 //sf::Musicがある以上enumがMusicはややこしい
@@ -40,7 +39,7 @@ enum class SfxID : int {
 // ----------------
 // ------------
 RESULTS_POINTS_UPDATE,  // リザルト画面のポイント加算
-//オリジナル
+
 CIRCUIT_COUNTING,
 CIRCUIT_READYGO,
 
@@ -107,7 +106,6 @@ private:
     friend class StateInitLoad;
 
 public:
-    //オリジナル
     static Audio& getInstance();
 
     static void loadCircuit(const std::string& folder);

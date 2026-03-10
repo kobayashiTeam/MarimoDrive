@@ -39,8 +39,6 @@ void Audio::loadAll() {
     instance.load(SfxID::CIRCUIT_PLAYER_MOTOR, "assets/sfx/engine.ogg");
     instance.load(SfxID::CIRCUIT_PLAYER_BRAKE, "assets/sfx/brake.ogg");
 
-
-    //ƒIƒŠƒWƒiƒ‹
     instance.load(SfxID::CIRCUIT_COUNTING, "assets/sfx/counting.ogg");
     instance.load(SfxID::CIRCUIT_READYGO, "assets/sfx/readyGo.ogg");
 

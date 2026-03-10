@@ -6,6 +6,8 @@ typedef std::shared_ptr<State> StatePtr;
 #include <SFML/Graphics.hpp>
 class Game;
 
+//場面を管理するクラスのベースクラス。場面インスタンスがスタックされ、
+//そのtopにあるものがgame.cppでupdateで処理されdrawで描画される
 class State {
 protected:
     Game& game;
