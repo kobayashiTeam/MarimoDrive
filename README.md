@@ -37,6 +37,6 @@
 
 リファクタリング・機能縮小できる能力は実務で求められるスキルであると考え、その体験ができました
 
-
+Youtube:https://www.youtube.com/watch?v=ULIE_iPm7Z0
 
 
