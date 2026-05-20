@@ -4,7 +4,7 @@
 
 Timer::Timer() {
 	//数字、記号を１枚のアトラスから切り出して各テクスチャに受け取る
-    std::string spriteFile = "assets/gui/digits.png";
+    std::string spriteFile = "assets/gui/digits2.png";
     for (int i = 0; i < 10; i++)//数字0-9
         digits[i].loadFromFile(spriteFile, sf::IntRect(0 + (i * 9), 0, 8, 14));
     for (int i = 0; i < 2; i++)//'と''
