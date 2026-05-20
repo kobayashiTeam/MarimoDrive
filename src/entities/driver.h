@@ -8,7 +8,7 @@
 //ドライバーの管理クラス。wallObjectの派生
 class Driver:public WallObject {
 public:
-    Driver(const char* spriteFile, const sf::Vector2f& _position,bool _isPlayer,
+    Driver(const std::string& spriteFile, const sf::Vector2f& _position,bool _isPlayer,
         RaceRankingArray& _rankOrder);
 
     float posAngle;

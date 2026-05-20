@@ -12,7 +12,7 @@ public:
         GO_BACK,
     };
 
-    DriverAnimator(const char* spriteFile);
+    DriverAnimator(const std::string& spriteFile);
     //アニメーション用画像には角度を変えてドライバーを描画したものが１２種類並んでいる
     sf::Texture driving[12];//１２種類を格納する
     sf::Sprite sprite;//レース中選ばれた角度のテクスチャをセットして描画する

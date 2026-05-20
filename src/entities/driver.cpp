@@ -9,7 +9,7 @@
 
 DriverPtr Driver::realPlayer = nullptr;
 
-Driver::Driver(const char* spriteFile, const sf::Vector2f& _position,bool _isPlayer, 
+Driver::Driver(const std::string& spriteFile, const sf::Vector2f& _position,bool _isPlayer,
     RaceRankingArray& _rankOrder)
 	: WallObject(_position, VISUALRADIOUS, HITBOXRADIOUS), animator(spriteFile), rankOrder(_rankOrder)
 {

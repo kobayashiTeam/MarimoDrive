@@ -1,7 +1,7 @@
 #include"driveranimator.h"
 #include"enums.h"
 
-DriverAnimator::DriverAnimator(const char* spriteFile) {
+DriverAnimator::DriverAnimator(const std::string& spriteFile) {
 
 	for (int i = 0; i < 12; i++)
         //ドライバーアニメーションアトラスから領域を切り出してテクスチャに格納する
